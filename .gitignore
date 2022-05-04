@@ -2,3 +2,9 @@
 *.pyc
 venv
 .DS_Store
+Linux/build
+Linux/dist
+Windows/build
+Windows/dist
+Mac/build
+Mac/dist

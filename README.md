@@ -22,6 +22,12 @@ Requirements are available here: https://github.com/AlessandroZ/LaZagne/wiki/Req
 pip install -r requirements.txt
 ```
 
+You can use Docker to build the Linux executable by running the following command. The executable will be located at `./Linux/dist/laZagne`
+
+```bash
+$ docker build -t lazagne . && docker run -it --rm -v $(pwd):/app -u "$UID:$GID" lazagne && docker image rm lazagne
+```
+
 Usage
 ----
 * Launch all modules
