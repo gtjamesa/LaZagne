@@ -22,10 +22,31 @@ Requirements are available here: https://github.com/AlessandroZ/LaZagne/wiki/Req
 pip install -r requirements.txt
 ```
 
+Building
+----
+
+Pre-compiled builds: [Linux](https://github.com/gtjamesa/LaZagne/raw/master/Linux/dist/laZagne) / [Windows](https://github.com/gtjamesa/LaZagne/raw/master/Windows/dist/lazagne.exe)
+
+**Linux**
+
 You can use Docker to build the Linux executable by running the following command. The executable will be located at `./Linux/dist/laZagne`
 
 ```bash
 $ docker build -t lazagne . && docker run -it --rm -v $(pwd):/app -u "$UID:$GID" lazagne && docker image rm lazagne
+```
+
+**Windows**
+
+The following commands can be executed to create a virtual environment and compile the executable:
+
+```bash
+python -m pip install --user virtualenv
+python -m venv env
+.\venv\Scripts\activate
+python -m pip install -r .\requirements.txt
+python -m pip install pyinstaller pywin32
+cd .\Windows\
+pyinstaller.exe .\lazagne.spec
 ```
 
 Usage
