@@ -13,7 +13,7 @@ This project has been added to [pupy](https://github.com/n1nj4sec/pupy/) as a po
 
 Standalones
 ----
-Standalones are now available here: https://github.com/AlessandroZ/LaZagne/releases/
+Standalone builds are available here: [Linux](https://github.com/gtjamesa/LaZagne/raw/master/Linux/dist/laZagne) / [Windows](https://github.com/gtjamesa/LaZagne/raw/master/Windows/dist/lazagne.exe)
 
 Installation
 ----
@@ -24,8 +24,6 @@ pip install -r requirements.txt
 
 Building
 ----
-
-Pre-compiled builds: [Linux](https://github.com/gtjamesa/LaZagne/raw/master/Linux/dist/laZagne) / [Windows](https://github.com/gtjamesa/LaZagne/raw/master/Windows/dist/lazagne.exe)
 
 **Linux**
 
